@@ -11,10 +11,6 @@ use App\Http\Controllers\SearchHistoryController;
 
 Route::get("/search", [SearchController::class, 'search'])->name('search');
 
-Route::post("/login", [UserController::class, 'login']);
-
-Route::get("/logout", [LogoutController::class, 'logout']);
-
 Route::get("/about", [AboutController::class, 'about']);
 
 Route::get("/", [LandingController::class, 'passVotd']);
